@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" data-provider-thread-count="2" >
+	<test name="SFDC Test">
+		<classes>
+			<class name="MyRunner.TestRunner" />
+		</classes>
+	</test>
+	<listeners>
+  		<listener class-name="Listeners.NGTestListener"></listener>
+  </listeners>
+  
+</suite>

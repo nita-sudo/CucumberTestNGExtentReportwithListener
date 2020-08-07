@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BDD Test Suite" duration-ms="44369" started-at="2020-08-07T10:32:42Z" finished-at="2020-08-07T10:33:27Z">
+    <groups>
+      <group name="cucumber scenarios">
+        <method signature="TestRunner.scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@4b952a2d]" name="scenario" class="MyRunner.TestRunner"/>
+      </group> <!-- cucumber scenarios -->
+    </groups>
+    <test name="SFDC Test" duration-ms="44369" started-at="2020-08-07T10:32:42Z" finished-at="2020-08-07T10:33:27Z">
+      <class name="MyRunner.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunner@4b952a2d]" name="setUpClass" is-config="true" duration-ms="163" started-at="2020-08-07T10:32:42Z" finished-at="2020-08-07T10:32:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="scenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunner@4b952a2d]" name="scenario" duration-ms="43881" started-at="2020-08-07T10:32:43Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-07T10:33:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login to salesforce application"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Sfdc Login Feature"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunner@4b952a2d]" name="tearDownClass" is-config="true" duration-ms="30" started-at="2020-08-07T10:33:27Z" finished-at="2020-08-07T10:33:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- MyRunner.TestRunner -->
+    </test> <!-- SFDC Test -->
+  </suite> <!-- BDD Test Suite -->
+</testng-results>

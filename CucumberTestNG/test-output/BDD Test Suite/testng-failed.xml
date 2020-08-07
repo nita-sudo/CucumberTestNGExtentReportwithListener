@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BDD Test Suite]" data-provider-thread-count="2">
+  <listeners>
+    <listener class-name="Listeners.NGTestListener"/>
+  </listeners>
+  <test thread-count="5" name="SFDC Test(failed)">
+    <classes>
+      <class name="MyRunner.TestRunner">
+        <methods>
+          <include name="scenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- MyRunner.TestRunner -->
+    </classes>
+  </test> <!-- SFDC Test(failed) -->
+</suite> <!-- Failed suite [BDD Test Suite] -->
