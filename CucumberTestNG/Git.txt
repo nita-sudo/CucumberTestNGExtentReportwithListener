@@ -1,0 +1,168 @@
+https://mvnrepository.com -- to download pom dependency
+user id mngr266054
+pswd egEsaqa
+http://chromedriver.storage.googleapis.com/index.html--- chrome exe
+mngr266358	AjedYje
+mngr266359	pYrevYz
+
+username	password
+mngr266357	nAbUbUj
+mngr266054	egEsaqa
+
+----run testng tests from pom.xml within eclipse-----
+
+1.add compiler and surefire plugins in pom.xml
+inside build , plugins ,plugin tags.
+
+2.once added both plugins update maven project by right clicking on root project folder >maven>update project
+
+3.right click and run as maven test
+
+-----run testng tests from maven CLI---
+1.download the maven for windows
+2.copy the path till bin folder in env variables
+3.create m2_HOME in env variable assign value till C:\Program Files\apache-maven-3.6.3-bin\apache-maven-3.6.3\ home   
+4.check maven version on cmd mvn -version
+5.go to home dir C:\Users\Sumit\eclipse-workspace\inetbankingv4 where pom.xml is .
+commands
+cd C:\Users\Sumit\eclipse-workspace\inetbankingv4
+mvn clean install
+
+----run tests using run.bat file----
+
+create run.bat file and add below commands in it
+cd C:\Users\Sumit\eclipse-workspace\inetbankingv4
+mvn clean install
+and run
+
+jenkins:pswd 4b1b72b009a4496f83332a74d8ac1602
+continue integration tool
+
+--------run testcases using jenkins------
+run.bat file
+freestyle project
+New item -> item name(project name)->freestyle prj->build->
+
+cd C:\Users\Sumit\eclipse-workspace\inetbankingv4
+run.bat
+
+save 
+
+2.using pom.xml maven
+
+configure JAVA_HOME 
+Manage jenkins >Global tool configuration>jdk>jdk installation >java home path
+
+New Item >item name (project name)>maven project >build
+
+in build section root pom :C:\Users\Sumit\eclipse-workspace\inetbankingv4\pom.xml
+goals & options :clean install 
+
+goto dashboard > manage jenkins >Global tool configuration>jdk C:\Program Files\Java\jdk1.8.0_65 name
+ 
+In the jenkins which are in devops  server always specify the github(repository) urls
+git >local
+github > remote 
+
+Git/Github (Repository) -code checkin
+
+
+1.download git (local repo)
+2.create account in github (remote repo) github.com
+
+login to github
+
+ github account nita-sudo Bewinner@123
+
+Create new repository on git hub by clicking on new repository on right hand + sign
+giv repository name  and make it public or private 
+
+then copy the url eg. https://github.com/nitsb/cucumber.git or
+
+https://github.com/nita-sudo/inetbanking4.git ---remote repo url
+
+GIT COMMANDS
+------------
+git init --> create an empty git repository(local) -- one time command 
+
+git remote add origin "https://github.com/nita-sudo/inetbanking4.git" --one time command used to connect to github
+
+git status -->wht are files are ready to commit in git repository
+
+git add -A -->add all your files in statging area
+
+git config --global user.name "nita-sudo" (here user name is github account name) --one time command
+
+git config --global user.email "viaanpatil19@gmail.com" (here email is github account email) --one time command 
+
+git commit -m "this is my first commit" -->commits all the files in git repository
+
+git push -u origin master -->push all commited files from local git to github
+after this give user name and password of github account nita-sudo Bewinner@123
+
+git pull  origin master -->getting files from github in local git 
+
+for removing remote origin if added by mistakely
+ git remote rm origin
+
+git in eclipse :How to check in code from eclipse in a git
+1. go to github url and login
+2.create repository
+3.copy the url 
+
+4.eclipse ->help ->install new software
+add work with url as http://download.eclipse.org/egit/updates 
+
+5.select all three and install
+
+6.Now to check if git is install go to windows ->view >other >git
+7.Select git repository
+8.You can see the git repositories window on left hand side
+9.click clone a git repository icon and all the details will be filled automatically then finish.
+10.you can see new repository in a window.
+11.Now right click on project that you want to checkin >Team>share project >select newly create .git repository from dropdown.>finish.
+12>team >commit
+13.drag and drop / add index files you want to commit from unstage changes to stage changes
+14.clcik commit and push
+15.Now ervery time you make any chnages in project just cmmit and push.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
